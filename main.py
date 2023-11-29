@@ -6,4 +6,4 @@ from dashboard_c import DashboardC
 dashboards = {'A': DashboardA().view, 'B': DashboardB().view, 'C': DashboardC().view}
 
 if __name__ == '__main__':
-    serve(dashboards)
+    serve(dashboards, admin=True, threaded=True, show=False)
