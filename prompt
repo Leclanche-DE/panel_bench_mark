@@ -1,0 +1,16 @@
+I want to create a very simple application based on Panel by the Holoviz team.
+It must have an abstract parent class based on param.parameterized to produce a simple dashboard using VanillaTemplate.
+This dashboard has three widgets:
+- a widget which let us pick a duration in seconds: 1, 2, 3, 5
+- a button which when we click on it, it executes a function sleeping for the set duration
+- a loading widget linked to pn.state.busy
+
+I want then three python modules building three dashboards based on this parent class. They do exactly the same thing above mentionned, but are titled
+- "A"
+- "B"
+- "C"
+
+
+There is are then two files in root to start the application:
+- one "main.py" using the "panel.serve" function. It can be executed by running python main.py. It will start every dashboard from every module
+- one "start.bat" which is a patch file using the CLI "panel serve". IT will also execute every dashboard from every module.
